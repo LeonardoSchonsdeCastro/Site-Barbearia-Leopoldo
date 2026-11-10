@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.allura-regular {
+  font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2{
+    text-align: center;
+    margin-top: 1em;
+    font-family: "Allura", Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-size: 2.3rem;
+}
+
+/* ========= NAVBAR COM FLEXBOX ========= */
+.navbar{
+    background-color:rgb(2, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: white;
+}
+
+.logo a {
+    font-family: "Allura", Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.menu-links a{
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    list-style: none;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.menu-links a:hover {
+    color: #d4af37;
+}
+
+.btn-agendar{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgba(255, 0, 0, 0.747);
+    text-decoration: none;
+    padding-left: 1rem;
+}
+
+/* ========= SOBRE ========= */
+
+#sobre {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+    background-color: #c5c1c17c;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    gap: 20px; 
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.foto-barbearia {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    padding: 5px;
+}
+
+.apresentacao{
+    margin-top: 2em;
+}
+
+/* ========= SERVIÇOS ========= */
+
+#servicos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5c1c149;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicos-grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    
+}
+
+.foto-servico{
+    flex: 0 0 30%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
+    margin: 15px 30px 15px 30px;
+}
+
+.lista-servico{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: #333 solid 1px;
+    border-radius: 20px;
+}
+
+
+/* ========= AVALIAÇÕES ========= */
+
+#avaliacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5c1c17c;
+}
+
+.reviews-grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.review-card{
+    border: 1px solid #00000088;
+    border-radius: 50px;
+    border-color: rgba(2, 2, 2, 0.336);
+    flex-direction: column;
+    padding: 15px;
+}
+
+.foto-logo{
+    flex: 0 0 80%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.356);
+    margin: 15px 30px 15px 30px;
+}
+
+/* ========= CONTATO ========= */
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #c5c1c149;
+}
+
+.contato-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.form-contato{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 3rem;
+}
+
+/* ========= RODAPE ========= */
+.rodape{
+    text-align: center;
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* ========= PARA CELULAR ========= */
+
+@media (max-width: 768px) {
+    *{
+        flex-direction: column; 
+        text-align: center;
+    }
+}
+
+
+
+
+
+

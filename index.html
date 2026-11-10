@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Barbearia Leopoldo</title>
+</head>
+<body>
+    <!-- Inicio menu navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                    <a href="#">Barbearia Leopoldo</a>
+            </div>
+            <ul class="menu-links">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <a href="#contato" class="btn-agendar">AGENDAR</a>         
+        </nav>
+    </header>
+    <!-- Fim menu navegação -->
+
+    <!-- Inicio conteudo -->
+    <main>
+        <!--##########SOBRE##########-->
+        <section id="sobre">
+            <div class="sobre-container">  
+                <h2>Sobre nosso espaço</h2>
+                <p class="apresentacao">A barbearia LEOPOLDO alinha tradição com as melhores e mais atuais técnicas de barbeado e estilo masculino, trazendo cortes clássicos e modernos...Entre toalhas quentes e massagem facial, os melhores cremes e espumas preparam o rosto dos nossos clientes. O ritual completo, do início ao fim.</p>
+            </div>
+
+            <div class="sobre-container">
+                <img src="images/barbearia.jpg" alt="Interior da Barbearia Leopoldo" class="foto-barbearia">
+            </div>
+        </section>
+
+        <!--##########SERVIÇOS##########-->
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <div class="servicos-grid">
+                <img src="images/pincel.jpg" alt="Pincel sobre a bancada e corte de cabelo" class="foto-servico">
+
+                <div class="lista-servico">
+                    <article class="servico-card">    
+                        <h3>Corte de Cabelo</h3>
+                        <p class="preco">=> R$60,00</p>
+                    </article>
+                    <article class="servico-card">
+                        <h3>Corte de Barba</h3>
+                        <p class="preco">=> R$40,00</p>
+                    </article>
+                    <article class="servico-card">
+                        <h3>Combo Corte Barba e Cabelo</h3>
+                        <p class="preco">=> R$80,00</p>
+                    </article>
+                    <article class="servico-card">
+                        <h3>Tingimento de Cabelo</h3>    
+                        <p class="preco">=> R$90,00</p>
+                    </article>
+                    <article class="servico-card">
+                        <h3>Tingimento de Barba</h3>
+                        <p class="preco">=> R$60,00</p>
+                    </article>
+                    <article class="servico-card">
+                        <h3>Combo Tingimento Barba e Cabelo</h3>
+                        <p class="preco">=> R$130,00</p>
+                    </article>
+                    <article class="servico-card">
+                        <h3>Combo corte barba/cabelo/tingimento</h3>
+                        <p class="preco">=> R$190,00</p>
+                    </article> 
+                </div>
+                
+                
+            </div>
+    
+        </section>
+
+        <!--##########AVALIAÇÕES##########-->
+        <section id="avaliacoes">
+            <h2>O que dizem nossos clientes</h2>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <p>"Melhor corte da cidade! Ambiente excelente."</p>
+                        <span>- João Silva</span>
+                    </div>
+                    <div class="review-card">
+                        <p>"Ótimos profissionais, recomendo!"</p>
+                        <span>- Gabriel Mota</span>
+                    </div>
+                    <div class="review-card">
+                        <p>"Minha mulher adorou. 100% aprovado."</p>
+                        <span>- Pedro Magalhães</span>
+                    </div>
+                    <div class="review-card">
+                        <p>"Sai parecendo 10 anos mais jovem. Curti!"</p>
+                        <span>- Érico Almeida</span>
+                    </div>
+                </div>      
+
+                 <img src="images/logo.jpg" alt="Foto de vidraçaria de salão" class="foto-logo">
+
+        </section>
+
+        <!--##########CONTATO##########-->
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <div class="contato-container">
+                <div class="info-contato">
+                    <p><strong><a href="#">Instagram</a></strong></p>
+                    <p><strong><a href="#">WhatsApp</a></strong></p>
+                    <p><strong>Telefone: (51)99878788</strong></p>
+                    <p><strong>E-mail: contato@barbearialeopoldo.com</strong></p>
+            
+                </div>      
+                <form class="form-contato">
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Seu nome">
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" required placeholder="Seu e-mail">
+
+                    <label for="servico">Serviço desejado:</label>
+                    <select name="servico" id="servico">
+                        <option value="cabelo">Corte cabelo</option>
+                        <option value="barba">Corte barba</option>
+                        <option value="combocorte">Combo corte</option>
+                        <option value="pintarcabelo">Tingir cabelo</option>
+                        <option value="pintarbarba">Tingir barba</option>
+                        <option value="combopintar">Combo tingimento</option>
+                        <option value="combo">Combo completo</option>
+                    </select>
+
+                    <label for="mensagem">Deixe sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" rows="4" placeholder="Data/horário preferido ou dúvidas"></textarea>
+
+                    <button type="submit">Enviar Solicitação</button>
+                </form>
+            </div> 
+            
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido por Leonardo Schons de Castro © 2026</p>
+    </footer>
+
+</body>
+</html>
